@@ -362,4 +362,4 @@ def show_names(clickData, selected_discipline, n_clicks_demob, n_clicks_mob, cur
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True)
