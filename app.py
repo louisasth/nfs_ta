@@ -362,4 +362,6 @@ def show_names(clickData, selected_discipline, n_clicks_demob, n_clicks_mob, cur
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8050))  # Render fournit le port via la variable d'environnement
+    app.run(host="0.0.0.0", port=port)
+
